@@ -34,7 +34,7 @@ export default function UnitCard({ unit }: UnitCardProps) {
 
   return (
     <>
-      <div className="card group hover:shadow-lg transition-all duration-300 overflow-hidden">
+      <div className="card group hover:shadow-lg transition-all duration-300 overflow-hidden h-full flex flex-col">
         {/* Image with overlay */}
         <Link
           href={`/unit/${unit.id}`}
@@ -86,7 +86,7 @@ export default function UnitCard({ unit }: UnitCardProps) {
         </Link>
 
         {/* Content */}
-        <div>
+        <div className="flex-1 flex flex-col">
           <div className="flex justify-between items-start mb-2">
             <Link href={`/unit/${unit.id}`}>
               <h3 className="text-xl font-semibold text-neutral-900 hover:text-primary-600 transition-colors">
@@ -151,7 +151,7 @@ export default function UnitCard({ unit }: UnitCardProps) {
           </div>
 
           {/* CTAs */}
-          <div className="mt-6 flex gap-3">
+          <div className="mt-auto pt-6 flex gap-3">
             <Link
               href={`/unit/${unit.id}`}
               className="flex-1 py-3 border border-primary-300 text-primary-700 rounded-xl font-medium hover:bg-primary-50 transition-colors text-sm text-center"
