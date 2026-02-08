@@ -31,7 +31,7 @@ export default function Header() {
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-neutral-200'
-          : 'bg-transparent'
+          : 'bg-gradient-to-b from-black/50 to-transparent'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
