@@ -86,7 +86,7 @@ export default function AdminLayout({
         {/* Logo */}
         <div className="h-16 flex items-center px-6 border-b border-neutral-800">
           <Link href="/admin" className="flex items-center gap-2">
-            <Logo darkText={false} />
+            <Logo darkBackground={true} />
             <span className="text-neutral-500 text-xs">Admin</span>
           </Link>
         </div>

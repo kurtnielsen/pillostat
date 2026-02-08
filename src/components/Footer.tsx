@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="mb-6 inline-block">
-              <Logo darkText={false} />
+              <Logo darkBackground={true} />
             </Link>
             <p className="text-sm leading-relaxed mb-6">
               Professional housing for traveling nurses and healthcare professionals.
