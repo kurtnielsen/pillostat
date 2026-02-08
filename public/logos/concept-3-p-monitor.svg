@@ -1,0 +1,36 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Letter P with vital signs monitor look -->
+  <defs>
+    <linearGradient id="pillowGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(5, 6)">
+    <!-- Rounded rectangle like a monitor -->
+    <rect x="0" y="4" width="44" height="44" rx="10" fill="#1e293b"/>
+
+    <!-- Letter P outline -->
+    <path d="M12,38 L12,14 L26,14 Q34,14 34,22 Q34,30 26,30 L12,30"
+          fill="none"
+          stroke="url(#pillowGrad3)"
+          stroke-width="5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- EKG line at bottom -->
+    <polyline
+      points="6,40 12,40 16,40 18,34 22,46 26,36 28,40 38,40"
+      fill="none"
+      stroke="#10b981"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+  </g>
+
+  <!-- Text -->
+  <text x="58" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700">
+    <tspan fill="#1e293b">pillow</tspan><tspan fill="#10b981">STAT</tspan>
+  </text>
+</svg>

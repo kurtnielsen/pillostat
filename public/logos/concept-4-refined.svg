@@ -1,0 +1,53 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Refined pillow with clearer pillow shape -->
+  <defs>
+    <linearGradient id="pillowGrad4r" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f472b6"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(5, 8)">
+    <!-- Main pillow body - more rectangular with puffy corners -->
+    <path d="M6,12
+             Q0,12 0,20
+             L0,28
+             Q0,36 6,36
+             L42,36
+             Q48,36 48,28
+             L48,20
+             Q48,12 42,12
+             Z"
+          fill="url(#pillowGrad4r)"/>
+
+    <!-- Corner tufts/puffs to make it look like a pillow -->
+    <circle cx="6" cy="12" r="5" fill="#f472b6"/>
+    <circle cx="42" cy="12" r="5" fill="#f472b6"/>
+    <circle cx="6" cy="36" r="5" fill="#db2777"/>
+    <circle cx="42" cy="36" r="5" fill="#db2777"/>
+
+    <!-- Pillow center indent/seam -->
+    <ellipse cx="24" cy="24" rx="16" ry="6" fill="#db2777" opacity="0.25"/>
+
+    <!-- Subtle highlight on top -->
+    <path d="M10,14 Q24,10 38,14" fill="none" stroke="white" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+
+    <!-- Medical cross subtle -->
+    <rect x="20" y="15" width="8" height="18" rx="2" fill="white" opacity="0.25"/>
+    <rect x="15" y="20" width="18" height="8" rx="2" fill="white" opacity="0.25"/>
+
+    <!-- EKG line -->
+    <polyline
+      points="6,24 14,24 17,18 21,30 25,20 28,24 42,24"
+      fill="none"
+      stroke="white"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+  </g>
+
+  <!-- Text -->
+  <text x="58" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700">
+    <tspan fill="#1e293b">pillow</tspan><tspan fill="#ec4899">STAT</tspan>
+  </text>
+</svg>

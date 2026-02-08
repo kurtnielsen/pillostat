@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import Logo from './Logo';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,23 +37,12 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           <Link href="/" className="flex items-center gap-3">
-            <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${
-              scrolled ? 'bg-primary-600' : 'bg-white/20 backdrop-blur-sm border border-white/30'
+            <Logo darkText={scrolled} />
+            <span className={`hidden sm:block text-xs transition-colors ${
+              scrolled ? 'text-neutral-500' : 'text-white/70'
             }`}>
-              <span className="text-white font-bold text-xl">P</span>
-            </div>
-            <div>
-              <span className={`font-bold text-xl transition-colors ${
-                scrolled ? 'text-neutral-900' : 'text-white'
-              }`}>
-                pillowSTAT
-              </span>
-              <span className={`hidden sm:block text-xs transition-colors ${
-                scrolled ? 'text-neutral-500' : 'text-white/70'
-              }`}>
-                Liberty Bay, Poulsbo
-              </span>
-            </div>
+              Liberty Bay, Poulsbo
+            </span>
           </Link>
 
           {/* Desktop Nav */}

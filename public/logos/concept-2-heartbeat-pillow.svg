@@ -1,0 +1,29 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pillow shaped like a rounded rectangle with heartbeat forming the top edge -->
+  <defs>
+    <linearGradient id="pillowGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(5, 6)">
+    <!-- Pillow with EKG top edge -->
+    <path d="M4,20
+             L4,40
+             Q4,48 12,48
+             L36,48
+             Q44,48 44,40
+             L44,20
+             L38,20 L36,12 L32,28 L28,8 L24,24 L20,20
+             L4,20 Z"
+          fill="url(#pillowGrad2)"/>
+    <!-- Subtle pillow shine -->
+    <ellipse cx="24" cy="34" rx="14" ry="6" fill="white" opacity="0.15"/>
+  </g>
+
+  <!-- Text -->
+  <text x="58" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700">
+    <tspan fill="#1e293b">pillow</tspan><tspan fill="#0ea5e9">STAT</tspan>
+  </text>
+</svg>

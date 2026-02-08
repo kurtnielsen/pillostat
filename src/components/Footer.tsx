@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -8,11 +9,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">P</span>
-              </div>
-              <span className="font-bold text-xl text-white">pillowSTAT</span>
+            <Link href="/" className="mb-6 inline-block">
+              <Logo darkText={false} />
             </Link>
             <p className="text-sm leading-relaxed mb-6">
               Professional housing for traveling nurses and healthcare professionals.

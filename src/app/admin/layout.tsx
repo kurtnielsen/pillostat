@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Logo from '@/components/Logo';
 
 const navigation = [
   {
@@ -84,14 +85,9 @@ export default function AdminLayout({
       <aside className="fixed inset-y-0 left-0 w-64 bg-neutral-900 text-white z-50">
         {/* Logo */}
         <div className="h-16 flex items-center px-6 border-b border-neutral-800">
-          <Link href="/admin" className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">P</span>
-            </div>
-            <div>
-              <span className="font-semibold text-lg">pillowSTAT</span>
-              <span className="text-neutral-500 text-xs block -mt-1">Admin Dashboard</span>
-            </div>
+          <Link href="/admin" className="flex items-center gap-2">
+            <Logo darkText={false} />
+            <span className="text-neutral-500 text-xs">Admin</span>
           </Link>
         </div>
 
